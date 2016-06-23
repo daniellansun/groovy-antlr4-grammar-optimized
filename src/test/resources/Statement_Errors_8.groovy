@@ -1,0 +1,3 @@
+trait a {
+    void m()
+}
