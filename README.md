@@ -5,3 +5,7 @@ gradlew clean
 
 // 2) generate codes with antlr4 and run the test cases
 gradlew -Dfile.encoding=UTF-8 :test --tests org.codehaus.groovy.parser.antlr4.MainTest
+
+
+// generate codes with antlr4 separately
+gradlew antlr4
