@@ -9,4 +9,4 @@ cache:
     - $HOME/.gradle/wrapper/
 before_install:
   - chmod +x gradlew
-script: ./gradlew -PuseAntlr4=true -Dfile.encoding=UTF-8 :test --tests org.codehaus.groovy.parser.antlr4.MainTest
+script: travis_wait 30 ./gradlew -PuseAntlr4=true -Dfile.encoding=UTF-8 :test --tests org.codehaus.groovy.parser.antlr4.MainTest
